@@ -10,6 +10,8 @@ body {
     line-height: 1.6;
 }
 
+/* Typography */
+
 h1,
 h2,
 strong {
@@ -20,10 +22,25 @@ strong {
     color: #ffe600;
 }
 
+.hero-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    color: #000;
+    margin-top: 1.25em;
+}
+
+/* buttons */
+
 .btn {
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1.75em;
     font-weight: 700;
     margin-top: 0.5em;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -32,19 +49,67 @@ strong {
     justify-self: start;
 }
 
-.hero-title {
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    line-height: 1.4;
+/* layout */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+.footer {
+    background: #ebebeb;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.footer-main,
+.social-list {
+    grid-column: 2/ -2;
+}
+
+.footer-logo {
+}
+
+.footer-text {
+}
+
+.footer-fineprint {
+}
+
+.social-list {
+    order: -1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    color: #000;
+    font-size: 2rem;
+    margin: 0 0.5em;
+}
+
+.social-link:hover {
+    color: #777;
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
     background-image: url(../img/hero-bg.jpg);
+    padding: 4em 0;
     color: #fff;
 }
 
 .hero > * {
+    grid-column: 2 / -2;
+}
+
+.info {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.col {
     grid-column: 2 / -2;
 }

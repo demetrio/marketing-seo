@@ -4,13 +4,18 @@
         <title>Jake & Elwood</title>
         <!-- viewport meta to render pages on mobile properly -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <!-- link to google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+
+        <!-- https://cdnjs.com/libraries/font-awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet" />
+
         <!-- link to my CSS -->
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <header class="header">
+        <header class="header main-grid">
             <div class="header-content">
                 <a class="logo-link" href="index.html">
                     <img src="img/logo.png" alt="" class="logo" />
@@ -18,16 +23,22 @@
 
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">about us</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                        <li class="social-item">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <main>
-            <section class="hero">
+            <section class="hero main-grid">
                 <h1 class="hero-title">
                     The only marketing agency on
                     <span class="accent-color">a mission from God</span>
@@ -38,10 +49,10 @@
                     <strong>SEO, SEM content marketing</strong>
                     and whatever else.
                 </p>
-                <a class="btn btn-primary">contact</a>
+                <a href="index.html" class="btn btn-primary">contact</a>
             </section>
 
-            <section class="info">
+            <section class="info main-grid">
                 <div class="col">
                     <h2 class="section-title section-title-center">About Us</h2>
                     <p>
@@ -73,8 +84,8 @@
             </section>
         </main>
 
-        <footer>
-            <div class="footer-main">
+        <footer class="footer main-grid">
+            <div class="footer-main ">
                 <img src="img/logo.png" alt="" class="footer-logo" />
                 <p class="footer-text">
                     Two brothers from Chicago that are just trying to pay back their debt by helping others with their
@@ -83,9 +94,15 @@
                 <p class="footer-fineprint">© Jake&Elwood 2019</p>
             </div>
             <ul class="social-list">
-                <li class="social-item"><a href="#" class="social-link"></a></li>
-                <li class="social-item"><a href="#" class="social-link"></a></li>
-                <li class="social-item"><a href="#" class="social-link"></a></li>
+                <li class="social-item">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </li>
             </ul>
         </footer>
     </body>
